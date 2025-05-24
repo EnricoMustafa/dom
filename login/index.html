@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Login</title>
-  </head>
-  <body>
-    <main>
-    <h1 class="text-3xl font-bold underline text-center mt-40">Media escolar</h1>
-      <section class="flex justify-center gap-2 mt-20">
-        <form onsubmit="return false" class=" flex-col w-sm m-a h-lg border p-8 bg-blue-200 rounded-lg">
-            <div class="m-2">
-                <label for="" class="font-bold">1° Unidade</label>
-                <input id="nota1" type="text" class="border rounded-lg w-40">
-            </div>
-            <div class="m-2">
-                <label for="" class="font-bold">2° Unidade</label>
-                <input id="nota2" type="text" class="border rounded-lg w-40">
-            </div>
-            <div class="m-2">
-                <label for="" class="font-bold">3° Unidade</label>
-                <input id="nota3" type="text" class="border rounded-lg w-40">
-            </div>
-            <button id="btn" type="button" onClick="media()" class="border flex justify-center m-auto mt-6 p-2 bg-green-500 rounded-lg font-semibold cursor-pointer">Calcular media</button>
-        </form>
-
-
-        <div action="" class=" flex-col m-a w-sm h-lg border p-8 bg-blue-200 rounded-lg">
-            <div class="flex gap-2">
-                <label for="" class="font-bold">Nota:</label>
-                <p id="mediaValor"></p>
-            </div>
-            <div class="flex gap-2">
-                <label for="" class="font-bold">Status:</label>
-                <p id="statusAluno"></p>
-            </div>
+    <title>Canivete Suiço</title>
+</head>
+<body>
+    <header class="w-screen">
+        <div class="flex p-8 justify-center border-b border-gray-400 m-auto">
+            <h1 class="font-bold text-5xl">Canivete Suiço</h1>
         </div>
-      </section>
+
+        <nav class="border-b border-gray-400">
+            <ul class="flex items-center w-lg m-auto justify-center font-bold">
+                <a class="p-3 cursor-pointer  border-l border-gray-400 hover:bg-blue-200">Canivete Suiço</a>
+                <a class="p-3 cursor-pointer  border-l border-r border-gray-400 hover:bg-blue-200">Sobre</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="h-100 flex justify-center gap-20 items-center transform-3d flex-wrap">
+
+            <a href="screens/mediaAluno.html" class="border border-gray-400 cursor-pointer w-sm h-2/4 rounded-2xl flex justify-center items-center shadow-lg bg-gradient-to-r from-[#f12711]  to-[#f5af19] animate-gradient-x duration-800 ease-out hover:scale-105">
+                <h1 class="font-bold text-2xl text-white">Calcular media</h1>
+            </a>
+
+            <a class="border border-gray-400 cursor-pointer w-sm h-2/4 rounded-2xl flex justify-center items-center shadow-lg bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59] animate-gradient-x duration-800 ease-out hover:scale-105">
+                <h1 class="font-bold text-2xl text-white">Converter pdf</h1>
+            </a>
+
+            <a class="border border-gray-400 cursor-pointer w-sm h-2/4 rounded-2xl flex justify-center items-center shadow-lg bg-gradient-to-r from-[#8e2de2]  to-[#4a00e0] animate-gradient-x duration-800 ease-out hover:scale-105">
+                <h1 class="font-bold text-2xl text-white">Fontes especiais</h1>
+            </a>
+            
+            <a class="border border-gray-400 cursor-pointer w-sm h-2/4 rounded-2xl flex justify-center items-center shadow-lg bg-gradient-to-r from-[#f7ff00] to-[#db36a4] animate-gradient-x duration-800 ease-out hover:scale-105">
+                <h1 class="font-bold text-2xl text-white">Pomodoro</h1>
+            </a>
+        </section>
     </main>
-    <script src="script.js"></script>
-  </body>
+
+</body>
 </html>

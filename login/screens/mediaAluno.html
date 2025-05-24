@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Media Alunos</title>
+  </head>
+  <body>
+    <main>
+      <div class=" w-40 h-40 flex block justify-center items-center ">
+        <a href="/index.html" class="bg-red-400 p-3 rounded-full w-14 h-14 shadow-lg bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59] animate-gradient-x duration-800 ease-out hover:scale-105 cursor-pointer">voltar</a>
+      </div>
+    <h1 class="text-3xl font-bold underline text-center ">Media escolar</h1>
+      <section class="flex justify-center gap-2 mt-20">
+        <form  action=""  class=" flex-col w-sm m-a h-lg border p-8 bg-blue-200 rounded-lg">
+            <div class="m-2">
+                <label for="" class="font-bold text-lg">1° Unidade</label>
+                <input id="nota1" type="text" maxlength="2" class="border rounded-lg w-40 p-1" required>
+            </div>
+            <div class="m-2">
+                <label for="" class="font-bold text-lg">2° Unidade</label>
+                <input id="nota2" type="text" maxlength="2" class="border rounded-lg w-40 p-1" required>
+            </div>
+            <div class="m-2">
+                <label for="" class="font-bold text-lg">3° Unidade</label>
+                <input id="nota3" type="text" maxlength="2" class="border rounded-lg w-40 p-1" required>
+            </div>
+            <button id="btn" type="button" onClick="media()" class="border flex justify-center m-auto mt-6 p-2 bg-green-500 rounded-lg font-semibold cursor-pointer">Calcular media</button>
+        </form>
+
+
+        <div action="" class=" flex-col w-sm h-lg border p-8 bg-blue-200 rounded-lg">
+            <div class="flex gap text-center items-center">
+                <label for="" class="font-bold text-2xl">Nota:</label>
+                <p id="mediaValor" class="items-center"></p>
+            </div>
+            <div class="flex gap-2 items-center">
+                <label for="" class="font-bold text-2xl">Status:</label>
+                <p id="statusAluno"></p>
+            </div>
+            <div class="text-center  mt-10">
+              <p id="situacao" class=" font-bold"></p>
+            </div>
+        </div>
+      </section>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>

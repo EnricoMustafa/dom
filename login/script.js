@@ -9,10 +9,16 @@ function media(){
     let total = (n1 + n2 + n3) / 3;
 
     const status = document.getElementById('statusAluno');
-    if(total => 6){
-        status.textContent = "Aprovado"
-    } else {
-        status.textContent = "Reprovado"
+    const situacaoAluno = document.getElementById('situacao');
+    if(total >= 6){
+        status.textContent = "Aprovado";
+        situacaoAluno.textContent = "Aluno passou de ano";
+    } else if(total > 4) {
+        status.textContent = "Reprovado";
+        situacaoAluno.textContent = "Aluno vai para prova final";
+    } else if(total < 4){
+        status.textContent = "Reprovado";
+        situacaoAluno.textContent = "Aluno vai para recuperação";
     }
 
     const resultado = document.getElementById('mediaValor');
